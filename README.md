@@ -8,4 +8,4 @@ Para esse rodar esse programa é necessário instalar o webdriver com a versão 
 
 Para saber qual versão do seu navegador:  edge://settings/help
 
-Baixar e instalar: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+Baixar e instalar o webdriver: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
