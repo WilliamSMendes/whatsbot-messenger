@@ -1,4 +1,4 @@
-# WhatsAppBot-with-POO-EDGE-
+# WhatsAppBot-with-POO
 
 Meu primeiro 'Hello World' com Python utilizando Orientação à Objetos e Selenium no Edge.
 
