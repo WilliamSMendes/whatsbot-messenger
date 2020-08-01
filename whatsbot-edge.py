@@ -16,7 +16,7 @@ class WhatsAppBot:
         self.mensagem = 'Olá mundo, sou um botzinho que está aprendendo a digitar sozinho'
         options = Options()
         options.page_load_strategy = 'eager'  # Carrega o essencial da pagina para melhorar a performance do algoritmo.
-        self.driver = Edge(executable_path=r'./msedgedriver.exe')
+        self.driver = Edge(executable_path=r'./msedgedriver.exe')   # Path onde se encontra o webdriver
 
     def enviar_mensagem(self):
 
@@ -26,7 +26,8 @@ class WhatsAppBot:
 
         for pessoa in self.pessoas:
 
-            try:  # Tentará localizar a pessoa na lista de conversas ativas
+            try:  # Tentará localizar a pessoa na lista de conversas ativas. 
+                  # Utilizei a inspeção de elementos da página do whatsapp e copiei o XPATH para encontrar os elementos desejáveis:
                 encontrar_pessoa = self.driver.find_element(By.XPATH, f"//span[@title='{pessoa}']")
                 encontrar_pessoa.click()
 
@@ -40,7 +41,7 @@ class WhatsAppBot:
                 enviar = self.driver.find_element(By.XPATH, '//span[@data-icon="send"]')
                 enviar.click()
 
-            except:  # Caso não ache, vai procurar na lista de contatos
+            except:  # Caso não ache, irá procurar na lista de contatos.
                 time.sleep(4)
 
                 nova_conversa = self.driver.find_element(By.XPATH, '//*[@id="side"]/div[1]/div/label/div')
@@ -65,7 +66,7 @@ class WhatsAppBot:
                 enviar = self.driver.find_element(By.XPATH, '//span[@data-icon="send"]')
                 enviar.click()
 
-        time.sleep(5)  # Tempo para cada loop para não travar seu pc (risos)
+        time.sleep(5)  # Tempo para cada loop para não travar seu pc (risos).
 
 
 botzinho = WhatsAppBot()
