@@ -11,7 +11,9 @@ Para esse rodar esse programa é necessário instalar o webdriver com a versão 
 
 # Caminhos do webdriver de cada navegador:
 
-*Edge Chromium*
+*EDGE CHROMIUM*:
+
+
 Para saber qual versão do seu navegador no Edge:  edge://settings/help
 
 
@@ -19,7 +21,9 @@ Baixar e instalar o webdriver do Edge: https://developer.microsoft.com/en-us/mic
 
 
 
-*Mozila Firefox*
+*MOZILA FIREFOX*:
+
+
 Para saber qual versão do seu navegador no Firefox: Ajuda -> Sobre o Firefox -> Uma aba aparecerá com a versão atual (o meu é 79.0 (64-bits))
 
 
@@ -27,7 +31,9 @@ Baixar e mover para o diretório do WhatsBot o webdriver com a verão correta: h
 
 
 
-*Google Chrome*
+*GOOGLE CHROME*:
+
+
 Para saber qual versão do seu navegador no Chrome:  chrome://settings/help
 
 
